@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ManavKasa {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Meyvelerin Fiyatları Öğretilir
+        float armutfiyat = 1.23f;
+        float elmafiyat = 4.43f;
+        float domatesfiyat = 2.22f;
+        float muzfiyat = 0.87f;
+        float patlıcanfiyat = 6.00f;
+
+        // Kilogram Bazında Değerleri Girmemizi İster
+        int armutkg = scanner.nextInt();
+        int elmakg = scanner.nextInt();
+        int domateskg = scanner.nextInt();
+        int muzkg = scanner.nextInt();
+        int patlıcankg = scanner.nextInt();
+
+        // Toplam Fiyatı Hesaplar
+        float toplamfiyat = armutkg * armutfiyat + elmakg * elmafiyat + domateskg * domatesfiyat + muzkg * muzfiyat + patlıcankg * patlıcanfiyat;
+
+        // Toplam Fiyatı Yazdırır
+        System.out.println("Toplam Fiyat: " + toplamfiyat);
+    }
+}
